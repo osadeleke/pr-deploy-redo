@@ -123,7 +123,7 @@ runs:
           echo "Free port: \$FREE_PORT"
 
           git clone --single-branch --branch $GITHUB_HEAD_REF $GITHUB_SERVER_URL/$GITHUB_REPOSITORY.git
-          mv flask-example temp
+          mv pr-deploy-redo temp
           cd temp
           
           if [ -n "$DOCKERFILE" ]; then
